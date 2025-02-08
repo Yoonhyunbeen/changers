@@ -2042,6 +2042,12 @@ body {
 }
 @media (max-width: 767px) {
   /* 320 */
+  body {
+    overflow-x: hidden;
+  }
+  .cursor {
+    display: none;
+  }
   .header__left, .header__right {
     width: 100%;
   }
