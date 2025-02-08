@@ -66,6 +66,7 @@ body {
   background: #fff;
   color: #151515;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .cursor {
@@ -128,6 +129,7 @@ body {
   z-index: 5;
   color: #fff;
   mix-blend-mode: difference;
+  max-width: 100vw;
 }
 .header__container {
   display: -webkit-box;
@@ -395,7 +397,7 @@ body {
   -webkit-transform: translateY(-15%);
           transform: translateY(-15%);
   line-height: 0.95;
-  font-size: calc(255px + 255 * (100vw - 961px) / 959);
+  font-size: calc(245px + 245 * (100vw - 961px) / 959);
 }
 .main .intro__video {
   position: absolute;
@@ -412,6 +414,7 @@ body {
   z-index: 2;
 }
 .main .about {
+  overflow: hidden;
   background-color: #000;
   color: #fff;
   z-index: 3;
@@ -600,7 +603,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  min-width: 365px;
+  min-width: 315px;
 }
 .main .service__top-text {
   min-width: 180px;
@@ -2042,14 +2045,11 @@ body {
 }
 @media (max-width: 767px) {
   /* 320 */
-  body {
-    overflow-x: hidden;
-  }
   .cursor {
     display: none;
   }
   .header__left, .header__right {
-    width: 100%;
+    width: 50%;
   }
   .header__item {
     width: 100%;
@@ -2186,7 +2186,7 @@ body {
   }
   .main .featured__scroll {
     height: auto;
-    width: 100vw;
+    width: 100%;
   }
   .main .featured__scroll-inner {
     position: static;
@@ -2330,6 +2330,9 @@ body {
     font-size: 50px;
     position: static;
   }
+  .main .social {
+    overflow: hidden;
+  }
   .main .social__title {
     margin-bottom: 120px;
   }
@@ -2339,6 +2342,7 @@ body {
   .main .social__mobile {
     display: block;
     height: auto;
+    overflow: hidden;
   }
   .main .social__ticker {
     position: relative;
@@ -2411,8 +2415,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 30px auto;
-    width: 365px;
-    height: 365px;
+    width: 300px;
+    height: 300px;
   }
   .main .footer {
     background: #050505;

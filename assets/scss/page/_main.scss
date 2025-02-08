@@ -105,7 +105,7 @@
             white-space: nowrap;
             transform: translateY(-15%);
             line-height: .95;
-            font-size: calc(255px + 255 * ((100vw - 961px) / 959));
+            font-size: calc(245px + 245 * ((100vw - 961px) / 959));
         }
         &__video {
             position: absolute;
@@ -121,6 +121,7 @@
         }
     }
     .about{
+        overflow: hidden;
         background-color: #000;
         color: #fff;
         z-index: 3;
@@ -276,7 +277,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
-                min-width: 365px;
+                min-width: 315px;
             }
             &-text{
                 min-width: 180px;
